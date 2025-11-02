@@ -1,0 +1,279 @@
+/* Basic Reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #aca7a7;
+  color: #b9b0b0;
+  line-height: 1.5;
+}
+
+/*  HEADER  */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #b38862;
+  box-shadow: 0 2px 6px rgba(17, 11, 11, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search_bar button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #c97455;
+  color: white;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  transition: o.3s;
+}
+
+.search_bar button:hover {
+  background-color: #1c1c1b;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #f3f1f1;
+  text-transform: uppercase;
+}
+
+.Links a {
+  text-decoration: none;
+  color: #6d3b25;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.Links a:hover {
+  color: #c97455;
+}
+
+/*  HERO SECTION  */
+#hero {
+  background: url(images/banner\ .jpg) center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #c97455;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #a7543c;
+}
+
+/* PRODUCTS  */
+#products {
+  text-align: center;
+  padding: 80px 60px;
+  background-color: #fff;
+}
+
+#products h2 {
+  font-size: 3rem;
+  margin-bottom: 100px;
+  color: #6d3b25;
+}
+
+.product-cosmitics {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.product {
+  background-color: #fffaf7;
+  border: 1px solid #f0dcd2;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product h3 {
+  margin: 15px 0 5px;
+  color: #6d3b25;
+}
+
+.product p {
+  color: #9b6868;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #c97455;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #a7543c;
+}
+
+/*  DESCRIPTION  */
+.description-cosmitics {
+  background-color: #5f301c;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.description-cosmitics p {
+  font-size:1.5rem;
+  color: #ffffff;
+  max-width: 800px;
+  margin: auto;
+}
+
+/*  TESTIMONIALS */
+.testimonials {
+  text-align: center;
+  padding: 80px 50px;
+  background-color: #fff;
+}
+
+.testimonials h2 {
+  color: #6d3b25;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.testimonial-cosmitics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.testimonial {
+  background-color: #fffaf7;
+  border-radius: 10px;
+  padding: 25px;
+  border: 1px solid #f0dcd2;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.testimonial h4 {
+  color: #c97455;
+  margin-bottom: 5px;
+}
+
+.stars {
+  color: #f4b400;
+  font-size: 1.2rem;
+}
+
+/*  FOOTER  */
+footer.contact {
+  background-color: #6d3b25;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-links a {
+  display: inline-block;
+  margin: 5px 10px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f5e1dc;
+}
+
+.socials a img {
+  width: 28px;
+  margin: 0 8px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+}
+
+.socials a:hover img {
+  transform: scale(1.2);
+}
+
+footer p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #f5e1dc;
+}
